@@ -13,3 +13,5 @@ Web browsers provide several methods for specifying the use of a proxy:
 | **Explicit** | • Simple to deploy, does not require additional infrastructure.• Doesn’t require JavaScript knowledge.• Supported in all major browsers. | • No fail-over functionality.• Proxy bypass lists are literal, browsers do not resolve host to IP and vice versa. Both the IP and host may need to be specified in the bypass list. |
 | **PAC** | • Proxy fail-over support.• Supported in all major browsers.• Ability to bypass proxy for specific hosts or IP addresses seamlessly. | • Most deployments will require web server infrastructure.• Requires JavaScript knowledge.• Some browsers may fail closed if the PAC file is unavailable (e.g. when off-network). |
 | **WPAD** | • Includes all PAC advantages.• Deployment only requires a check box be selected.• Browser fails open if WPAD cannot locate a PAC file (e.g. when off-network). | • Includes all PAC disadvantages.• Requires DNS or DHCP infrastructure changes. |
+
+[Back to ReadMe](https://github.com/mdries-zs/findproxyforurl/blob/main/README.md)
