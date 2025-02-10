@@ -91,7 +91,7 @@ If all proxies are down, and there was no DIRECT option specified, the Navigat
 # Predefined Functions and Environment for the JavaScript Function
 
 - Hostname based conditions:
-    - [isPlainHostName()](#isPlainHostName)
+    - [isPlainHostName()](#isplainhostname)
     - [dnsDomainIs()](#dnsDomainIs)
     - [localHostOrDomainIs()](#localHostOrDomainIs)
     - [isResolvable()](#isResolvable)
