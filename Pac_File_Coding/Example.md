@@ -46,7 +46,8 @@ This page includes a PAC file example which has been proven to be flexible, easy
 	 
 	}
  <br>
- ### Recommendations
+ 
+## Recommendations
 
 When deploying URL and host rules care must be taken to ensure rules are as explicit as possible. The examples below detail how host and URL rules should be implemented.
 
