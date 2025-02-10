@@ -28,16 +28,23 @@ which will be called by the Navigator in the following way for every URL that is
 
 where:
 
-**url**the full URL being accessed.**host**the hostname extracted from the URL. This is only for convenience, it is the exact same string as between :// and the first : or / after that. The port number is not included in this parameter. It can be extracted from the URL when necessary.**ret**(the return value) a string describing the configuration. The format of this string is defined below.
+**url**
+
+the full URL being accessed.
+
+**host**
+
+the hostname extracted from the URL. This is only for convenience, it is the exact same string as between :// and the first : or / after that. The port number is not included in this parameter. It can be extracted from the URL when necessary.
+
+**ret**
+
+(the return value) a string describing the configuration. The format of this string is defined below.
 
 ---
 
 # Saving the Auto-Config FileSetting the MIME Type
 
-1. You should save the JavaScript function to file with a  filename extension; for example:
-    
-    .pac
-    
+1. You should save the JavaScript function to file with a .pac filename extension; for example:
 
 ```
         proxy.pac
@@ -45,24 +52,34 @@ where:
 
 **Note 1:**
 
+You should save the JavaScript function
+
 **by itself**
+
+, not embed it in HTML.
 
 **Note 2:** The examples in the end of this document are **complete**, there is no additional syntax needed to save it into a file and use it (of course, the JavaScripts have to be edited to reflect your site’s domain name and/or subnets).
 
-1. Next, you should configure your server to map the  filename extension to the MIME type:
-    
-    .pac
+1. Next, you should configure your server to map the .pac  filename extension to the MIME type:
     
 
 ```
         application/x-ns-proxy-autoconfig
 ```
 
+  If using a Netscape server, edit the
+
 mime.types
+
+  file in the
 
 config
 
+  directory. If using Apache, CERN or NCSA servers, use the
+
 AddType
+
+  directive.
 
 ---
 
@@ -74,7 +91,14 @@ If the string is null, no proxies should be used.
 
 The string can contain any number of the following building blocks, separated by a semicolon:
 
-**DIRECT**Connections should be made directly, without any proxies.**PROXY *host:port***The specified proxy should be used.**SOCKS *host:port***The specified SOCKS server should be used.
+**DIRECT**
+<br>   Connections should be made directly, without any proxies.
+   
+**PROXY *host:port***
+<br>   The specified proxy should be used.
+   
+**SOCKS *host:port***
+<br>   The specified SOCKS server should be used.
 
 If there are multiple semicolon-separated settings, the left-most setting will be used, until the Navigator fails to establish the connection to the proxy. In that case the next value will be used, etc.
 
@@ -84,14 +108,21 @@ If all proxies are down, and there was no DIRECT option specified, the Navigat
 
 ### Examples:
 
-**PROXY w3proxy.netscape.com:8080; PROXY mozilla.netscape.com:8081**Primary proxy is w3proxy:8080; if that goes down start using mozilla:8081 until the primary proxy comes up again.**PROXY w3proxy.netscape.com:8080; PROXY mozilla.netscape.com:8081; DIRECT**Same as above, but if both proxies go down, automatically start making direct connections. (In the first example above, Netscape will ask user confirmation about making direct connections; in this third case, there is no user intervention.)**PROXY w3proxy.netscape.com:8080; SOCKS socks:1080**Use SOCKS if the primary proxy goes down.
+**PROXY w3proxy.netscape.com:8080; PROXY mozilla.netscape.com:8081**
+<br> Primary proxy is w3proxy:8080; if that goes down start using mozilla:8081 until the primary proxy comes up again.
+
+**PROXY w3proxy.netscape.com:8080; PROXY mozilla.netscape.com:8081; DIRECT**
+<br> Same as above, but if both proxies go down, automatically start making direct connections. (In the first example above, Netscape will ask user confirmation about making direct connections; in this third case, there is no user intervention.)
+
+**PROXY w3proxy.netscape.com:8080; SOCKS socks:1080**
+<br> Use SOCKS if the primary proxy goes down.
 
 ---
 
 # Predefined Functions and Environment for the JavaScript Function
 
 - Hostname based conditions:
-    - [isPlainHostName()](#isPlainHostName)
+    - [isPlainHostName()](#test1)
     - [dnsDomainIs()](#dnsDomainIs)
     - [localHostOrDomainIs()](#localHostOrDomainIs)
     - [isResolvable()](#isResolvable)
@@ -111,7 +142,7 @@ If all proxies are down, and there was no DIRECT option specified, the Navigat
 
 ---
 
-### isPlainHostName(host) {#isPlainHostName}
+### isPlainHostName(host) {#test1}
 
 **host**the hostname from the URL (excluding port number).
 
