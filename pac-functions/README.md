@@ -11,6 +11,7 @@ The Functions
 <summary>dnsDomainIs</summary>
 Evaluates hostnames and returns true if hostnames match. Used mainly to match and exception individual hostnames.
 <br>
+<br>
 <ins>Example</ins>
 
     // If the hostname matches google.com or www.google.com
@@ -22,6 +23,7 @@ Evaluates hostnames and returns true if hostnames match. Used mainly to match an
 <details>
 <summary>shExpMatch</summary>
 Will attempt to match hostname or URL to a specified shell expression, and returns true if matched.
+<br>
 <br>
 <ins>Example 1</ins>
   
@@ -43,6 +45,7 @@ Will attempt to match hostname or URL to a specified shell expression, and retur
 <summary>isInNet</summary>
 This function evaluates the IP address of a hostname, and if within a specified subnet returns true. If a hostname is passed the function will resolve the hostname to an IP address.
 <br>
+<br>
 <ins>Example</ins>
 
     // If IP of requested website website falls within IP range, send direct to the Internet.
@@ -53,6 +56,7 @@ This function evaluates the IP address of a hostname, and if within a specified 
 <details>
 <summary>myIpAddress</summary>
 Returns the IP address of the host machine.
+<br>
 <br>
 <ins>Example</ins>
     
@@ -65,6 +69,7 @@ Returns the IP address of the host machine.
 <details>
 <summary>dnsResolve</summary>
 Resolves hostnames to an IP address. This function can be used to reduce the number of DNS lookups, e.g. below example.
+<br>
 <br>
 <ins>Example</ins>
     
@@ -81,6 +86,7 @@ Resolves hostnames to an IP address. This function can be used to reduce the num
 This function will return true if the hostname contains no dots, e.g. http://intranet<br>
 Useful when applying exceptions for internal websites, e.g. may not require resolution of a hostname to IP address to determine if local.
 <br>
+<br>
 <ins>Example</ins>
     
     // If user requests plain hostnames, e.g. http://intranet/, 
@@ -92,6 +98,7 @@ Useful when applying exceptions for internal websites, e.g. may not require reso
 <details>
 <summary>localHostOrDomainIs</summary>
 Evaluates hostname and only returns true if exact hostname match is found.
+<br>
 <br>
 <ins>Example</ins>
     
@@ -128,6 +135,7 @@ This function returns the number of DNS domain levels (number of dots) in the ho
 <details>
 <summary>weekdayRange</summary>
 Allows rules to be time based, e.g. only return a proxy during specific days.
+<br>
 <br>
 <ins>Example</ins>
     
