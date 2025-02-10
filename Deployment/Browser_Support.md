@@ -30,3 +30,4 @@ The technology behind PAC files and the WPAD protocol never became ratified stan
 
 **IPv6** – The ability to handle IPv6 addresses using built-in functions, e.g. using FindProxyForURLEx()
 
+[Back to ReadMe](https://github.com/mdries-zs/findproxyforurl/blob/main/README.md)
