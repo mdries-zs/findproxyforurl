@@ -10,7 +10,7 @@ The Functions
 <details>
 <summary>dnsDomainIs</summary>
 Evaluates hostnames and returns true if hostnames match. Used mainly to match and exception individual hostnames.
-
+<br>
 <ins>Example</ins>
 
     // If the hostname matches google.com or www.google.com
@@ -22,7 +22,7 @@ Evaluates hostnames and returns true if hostnames match. Used mainly to match an
 <details>
 <summary>shExpMatch</summary>
 Will attempt to match hostname or URL to a specified shell expression, and returns true if matched.
-
+<br>
 <ins>Example 1</ins>
   
     // Any requests with a hostname ending with the extension .local
@@ -42,6 +42,7 @@ Will attempt to match hostname or URL to a specified shell expression, and retur
 <details>
 <summary>isInNet</summary>
 This function evaluates the IP address of a hostname, and if within a specified subnet returns true. If a hostname is passed the function will resolve the hostname to an IP address.
+<br>
 <ins>Example</ins>
 
     // If IP of requested website website falls within IP range, send direct to the Internet.
@@ -52,6 +53,7 @@ This function evaluates the IP address of a hostname, and if within a specified 
 <details>
 <summary>myIpAddress</summary>
 Returns the IP address of the host machine.
+<br>
 <ins>Example</ins>
     
     // If the machine requesting a website falls within IP range,
@@ -63,7 +65,7 @@ Returns the IP address of the host machine.
 <details>
 <summary>dnsResolve</summary>
 Resolves hostnames to an IP address. This function can be used to reduce the number of DNS lookups, e.g. below example.
-
+<br>
 <ins>Example</ins>
     
     // If IP of the requested host falls within any of the ranges specified, send direct.
@@ -78,6 +80,7 @@ Resolves hostnames to an IP address. This function can be used to reduce the num
 <summary>isPlainHostName</summary>
 This function will return true if the hostname contains no dots, e.g. http://intranet<br>
 Useful when applying exceptions for internal websites, e.g. may not require resolution of a hostname to IP address to determine if local.
+<br>
 <ins>Example</ins>
     
     // If user requests plain hostnames, e.g. http://intranet/, 
@@ -89,7 +92,7 @@ Useful when applying exceptions for internal websites, e.g. may not require reso
 <details>
 <summary>localHostOrDomainIs</summary>
 Evaluates hostname and only returns true if exact hostname match is found.
-
+<br>
 <ins>Example</ins>
     
     // If the Host requested is "www" or "www.google.com", send direct.
@@ -100,7 +103,8 @@ Evaluates hostname and only returns true if exact hostname match is found.
 <details>
 <summary>isResolvable</summary>
 Attempts to resolve a hostname to an IP address and returns true if successful. WARNING – This may cause a browser to temporarily hang if a domain isn’t resolvable.
-
+<br>
+<br>
 <ins>Example</ins>
     
     // If the host requested can be resolved by DNS, send via proxy1.example.com.
@@ -111,6 +115,8 @@ Attempts to resolve a hostname to an IP address and returns true if successful. 
 <details>
 <summary>dnsDomainLevels</summary>
 This function returns the number of DNS domain levels (number of dots) in the hostname. Can be used to exception internal websites which use short DNS names, e.g. http://intranet
+<br>
+<br>
 <ins>Example</ins>
     
     // If hostname contains any dots, send via proxy1.example.com, otherwise send direct.
@@ -122,6 +128,7 @@ This function returns the number of DNS domain levels (number of dots) in the ho
 <details>
 <summary>weekdayRange</summary>
 Allows rules to be time based, e.g. only return a proxy during specific days.
+<br>
 <ins>Example</ins>
     
     // If during the period of Monday to Friday, proxy1.example.com will be returned, otherwise
@@ -133,7 +140,8 @@ Allows rules to be time based, e.g. only return a proxy during specific days.
 <details>
 <summary>dateRange</summary>
 Allows rules to be time based, e.g. only return a proxy during specific months.
-
+<br>
+<br>
 <ins>Example</ins>
     
     // If during the period of January to March, proxy1.example.com will be returned, otherwise
@@ -145,7 +153,8 @@ Allows rules to be time based, e.g. only return a proxy during specific months.
 <details>
 <summary>timeRange</summary>
 Allows rules to be time based, e.g. only return a proxy during specific hours.
-
+<br>
+<br>
 <ins>Example</ins>
     
     // If during the period 8am to 6pm, proxy1.example.com will be returned, otherwise
@@ -159,7 +168,8 @@ Allows rules to be time based, e.g. only return a proxy during specific hours.
 The alert() function is not specified in the original PAC specification, although support was previously supported in several browsers, useful for outputting the value of a variable or result of a function in a manner that is viewable by the end-user and leveraged for troubleshooting PAC file rule issues.<br>
 <br>
 *This function is now considered unsupported and non-functional in PAC files.*
-
+<br>
+<br>
 <ins>Example</ins>
     
     // Outputs the resolved IP address of the host in the browser
