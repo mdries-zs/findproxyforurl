@@ -145,17 +145,17 @@ If all proxies are down, and there was no DIRECT option specified, the Navigat
 ### isPlainHostName(host)
 
 **host**
-the hostname from the URL (excluding port number).
+&nbsp;&nbsp;&nbsp;&nbsp;the hostname from the URL (excluding port number).
 
 True iff there is no domain name in the hostname (no dots).
 
 ### Examples:
 
 **isPlainHostName("www")**
-<br>   is true.
+<br> &nbsp;&nbsp;&nbsp;&nbsp;  is true.
 
 **isPlainHostName("www.netscape.com")**
-<br>   is false.
+<br> &nbsp;&nbsp;&nbsp;&nbsp;  is false.
 
 ---
 
