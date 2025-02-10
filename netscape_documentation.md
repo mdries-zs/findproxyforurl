@@ -122,7 +122,7 @@ If all proxies are down, and there was no DIRECT option specified, the Navigat
 # Predefined Functions and Environment for the JavaScript Function
 
 - Hostname based conditions:
-    - [isPlainHostName()](#test1)
+    - [isPlainHostName()](#isPlainHostName(host))
     - [dnsDomainIs()](#dnsDomainIs)
     - [localHostOrDomainIs()](#localHostOrDomainIs)
     - [isResolvable()](#isResolvable)
@@ -142,7 +142,7 @@ If all proxies are down, and there was no DIRECT option specified, the Navigat
 
 ---
 
-### isPlainHostName(host) {#test1}
+### isPlainHostName(host)
 
 **host**the hostname from the URL (excluding port number).
 
