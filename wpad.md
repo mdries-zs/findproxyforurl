@@ -17,6 +17,7 @@ Prerequisites include a PAC file, web server, DHCP server, and for any user comp
 - One of these options, **252**, contains the PAC file location. The web browser can perform a request to download the PAC file.
 
 ![WPAD_Diagram1!](https://github.com/mdriesnj/findproxyforurl/blob/main/wpad_diagram1.png?raw=true)
+<img src='https://github.com/mdriesnj/findproxyforurl/blob/main/wpad_diagram1.png?raw=true'>
 
 ## DNS WPAD
 
