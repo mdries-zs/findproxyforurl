@@ -79,3 +79,5 @@ Safe Example
 	 
 	if (shExpMatch(host, "*.hotmail.com"))
 			return "DIRECT";
+
+[Back to ReadMe](https://github.com/mdries-zs/findproxyforurl/blob/main/README.md)
