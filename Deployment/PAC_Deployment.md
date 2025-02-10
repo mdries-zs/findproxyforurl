@@ -3,7 +3,7 @@ Deploying a PAC file explicitly using the browser proxy settings is one of the m
 
 ## Web Server
 
-The web server should be configured to serve a [PAC file](https://github.com/mdriesnj/findproxyforurl/blob/main/Pac_File_Coding/Example.md) with the correct MIME type.
+The web server should be configured to serve a [PAC file](https://github.com/mdries-zs/findproxyforurl/blob/main/Pac_File_Coding/Example.md) with the correct MIME type.
 
 <details>
   <summary>IIS Server</summary>
@@ -81,3 +81,5 @@ Like Safari, Chrome utilizes the Windows proxy settings as used in Internet Expl
 6. Enter the URL for the PAC file in the text box, click **OK**.
 
 </details>
+
+[Back to ReadMe](https://github.com/mdries-zs/findproxyforurl/blob/main/README.md)
