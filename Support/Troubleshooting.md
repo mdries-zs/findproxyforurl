@@ -29,6 +29,6 @@ Click a deployment in order to view the recommended troubleshooting process.
     2. Type *regedit* and click **OK**.
     3. Navigate the Registry tree to the following location: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections\
     4. In the pane to the right, double click **DefaultConnectionSettings**.
-    5. The WPAD DHCP URL will be displayed in the dialog box – [screenshot]('../Images/screenshot.png)
+    5. The WPAD DHCP URL will be displayed in the dialog box – [screenshot](https://github.com/mdriesnj/findproxyforurl/blob/main/Images/screenshot.png?raw=true)
   
 </details>
