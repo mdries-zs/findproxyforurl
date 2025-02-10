@@ -32,3 +32,12 @@ Click a deployment in order to view the recommended troubleshooting process.
     5. The WPAD DHCP URL will be displayed in the dialog box – [screenshot](https://github.com/mdriesnj/findproxyforurl/blob/main/Images/screenshot.png?raw=true)
   
 </details>
+
+<details>
+  <summary>WPAD DNS</summary>
+
+- Follow the steps for troubleshooting an explicit PAC file configuration – WPAD is a means of deploying a PAC file, thus any issues with the web server or the file itself could be overlooked if focusing solely on the WPAD portion.
+- Attempt to ping the host **wpad**, a failure to resolve would indicate an issue with the DNS server. Does the hostname point to the correct web server? WPAD DNS requires this record to exist and point to the web server hosting the PAC file.
+- With all proxy/PAC settings disabled, attempt to access http://wpad/wpat.dat – WPAD DNS requires that this be the functional URL format. Investigate any errors returned.
+
+</details>
