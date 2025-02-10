@@ -123,20 +123,20 @@ If all proxies are down, and there was no DIRECT option specified, the Navigat
 
 - Hostname based conditions:
     - [isPlainHostName()](#isplainhostnamehost)
-    - [dnsDomainIs()](#dnsDomainIs)
-    - [localHostOrDomainIs()](#localHostOrDomainIs)
-    - [isResolvable()](#isResolvable)
-    - [isInNet()](#isInNet)
+    - [dnsDomainIs()](#dnsdomainis)
+    - [localHostOrDomainIs()](#localhostordomainis)
+    - [isResolvable()](#isresolvable)
+    - [isInNet()](#isinnet)
 - Related utility functions:
-    - [dnsResolve()](#dnsResolve)
-    - [myIpAddress()](#myIpAddress)
-    - [dnsDomainLevels()](#dnsDomainLevels)
+    - [dnsResolve()](#dnsresolve)
+    - [myIpAddress()](#myipaddress)
+    - [dnsDomainLevels()](#dnsdomainlevels)
 - URL/hostname based conditions:
-    - [shExpMatch()](#shExpMatch)
+    - [shExpMatch()](#shexpmatch)
 - Time based conditions:
-    - [weekdayRange()](#weekdayRange)
-    - [dateRange()](#dateRange)
-    - [timeRange()](#timeRange)
+    - [weekdayRange()](#weekdayrange)
+    - [dateRange()](#daterange)
+    - [timeRange()](#timerange)
 - There is one associative array already defined (because a JavaScript currently cannot define them on its own):
     - ProxyConfig.bindings
 
