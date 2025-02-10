@@ -51,17 +51,17 @@ This page includes a PAC file example which has been proven to be flexible, easy
 
 When deploying URL and host rules care must be taken to ensure rules are as explicit as possible. The examples below detail how host and URL rules should be implemented.
 
-### Host Example
+**Host Example**
       
     if (dnsDomainIs(host, "abcdomain.com") || dnsDomainIs(host, "www.abcdomain.com"))
         return "DIRECT";
 
-### URL Example
+**URL Example**
 
     if (shExpMatch(url, "http://abcdomain.com/folder/*"))
         return "DIRECT";
 
-### Warnings
+## Warnings
 
 The following code is an example **which may have unintended consequences** due to the broad interpretation of using the shExpMatch function, wildcards, and hostnames.
 
