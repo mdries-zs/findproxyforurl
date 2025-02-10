@@ -16,7 +16,6 @@ Prerequisites include a PAC file, web server, DHCP server, and for any user comp
 - The DHCP server responds with a **DHCP ACK** message, containing the list of options and configurations
 - One of these options, **252**, contains the PAC file location. The web browser can perform a request to download the PAC file.
 
-![WPAD_Diagram1!](https://github.com/mdriesnj/findproxyforurl/blob/main/wpad_diagram1.png?raw=true)
 <img src='https://github.com/mdriesnj/findproxyforurl/blob/main/wpad_diagram1.png?raw=true'>
 
 ## DNS WPAD
@@ -32,3 +31,5 @@ Prerequisites include a PAC file, web server, and a locally access DNS hostname 
 - A DNS WPAD enabled browser will remove the machine name **(laptop01)**, apply **wpad** to the network name, and apply as a suffix the file resource **/wpad.dat**, e.g. **http://wpad.us.division.company.com/wpad.dat**.
 - The browser will try to download the PAC file from the location **http://wpad.us.division.company.com/wpad.dat**.
 - If the web browser is unable to resolve the host **wpad.us.division.company.com**, it will progress through the sub-domain node hierarchy and attempt to download the wpad.dat file from the host **wpad.division.company.com**, and so on until the lowest valid node is reached, **wpad.company.com**.
+
+<img src='https://github.com/mdriesnj/findproxyforurl/blob/main/wpaddns_diagram2.png?raw=true'>
