@@ -23,4 +23,4 @@ Additionally, a PAC file can route:
 
 * *The myIpAddress() function is inconsistently implemented across the major web browsers and doesn’t support IPv6; this may result in either an IPv6 address being returned unexpectedly, 127.0.0.1 being returned, or the IP address of an unexpected network adapter being returned. As such it’s recommended to avoid use of this function completely. Windows has implemented a new FindProxyForURLEx() function to support IPv6, however, the implementation is complex and support across the major browsers is lacking.*
 
-[Back to ReadME](https://github.com/mdries-zs/findproxyforurl/blob/main/README.md)
+[Back to ReadMe](https://github.com/mdries-zs/findproxyforurl/blob/main/README.md)
