@@ -145,7 +145,7 @@ If all proxies are down, and there was no DIRECT option specified, the Navigat
 ### isPlainHostName(host)
 
 **host**
-&nbsp;&nbsp;&nbsp;&nbsp;the hostname from the URL (excluding port number).
+<br>&nbsp;&nbsp;&nbsp;&nbsp;the hostname from the URL (excluding port number).
 
 True iff there is no domain name in the hostname (no dots).
 
@@ -161,43 +161,80 @@ True iff there is no domain name in the hostname (no dots).
 
 ### dnsDomainIs(host, domain)
 
-**host**is the hostname from the URL.**domain**is the domain name to test the hostname against.
+**host**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is the hostname from the URL.
+
+**domain**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is the domain name to test the hostname against.
 
 Returns true iff the domain of hostname matches.
 
 ### Examples:
 
-**dnsDomainIs("www.netscape.com", ".netscape.com")**is true.**dnsDomainIs("www", ".netscape.com")**is false.**dnsDomainIs("www.mcom.com", ".netscape.com")**is false.
+**dnsDomainIs("www.netscape.com", ".netscape.com")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is true.
+
+**dnsDomainIs("www", ".netscape.com")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is false.
+
+**dnsDomainIs("www.mcom.com", ".netscape.com")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is false.
 
 ---
 
 ### localHostOrDomainIs(host, hostdom)
 
-**host**the hostname from the URL.**hostdom**fully qualified hostname to match against.
+**host**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;the hostname from the URL.
+
+**hostdom**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;fully qualified hostname to match against.
 
 Is true if the hostname matches exactly the specified hostname, or if there is no domain name part in the hostname, but the unqualified hostname matches.
 
 ### Examples:
 
-**localHostOrDomainIs("www.netscape.com", "www.netscape.com")**is true (exact match).**localHostOrDomainIs("www", "www.netscape.com")**is true (hostname match, domain not specified).**localHostOrDomainIs("www.mcom.com", "www.netscape.com")**is false (domain name mismatch).**localHostOrDomainIs("home.netscape.com", "www.netscape.com")**is false (hostname mismatch).
+**localHostOrDomainIs("www.netscape.com", "www.netscape.com")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is true (exact match).
+
+**localHostOrDomainIs("www", "www.netscape.com")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is true (hostname match, domain not specified).
+
+**localHostOrDomainIs("www.mcom.com", "www.netscape.com")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is false (domain name mismatch).
+
+**localHostOrDomainIs("home.netscape.com", "www.netscape.com")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is false (hostname mismatch).
 
 ---
 
 ### isResolvable(host)
 
-**host**is the hostname from the URL.
+**host**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is the hostname from the URL.
 
 Tries to resolve the hostname. Returns true if succeeds.
 
 ### Examples:
 
-**isResolvable("www.netscape.com")**is true (unless DNS fails to resolve it due to a firewall or some other reason).**isResolvable("bogus.domain.foobar")**is false.
+**isResolvable("www.netscape.com")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is true (unless DNS fails to resolve it due to a firewall or some other reason).
+
+**isResolvable("bogus.domain.foobar")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is false.
 
 ---
 
 ### isInNet(host, pattern, mask)
 
-**host**a DNS hostname, or IP address. If a hostname is passed, it will be resoved into an IP address by this function.**pattern**an IP address pattern in the dot-separated format**mask**mask for the IP address pattern informing which parts of the IP address should be matched against. 0 means ignore, 255 means match.
+**host**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;a DNS hostname, or IP address. If a hostname is passed, it will be resoved into an IP address by this function.
+
+**pattern**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;an IP address pattern in the dot-separated format
+
+**mask**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;mask for the IP address pattern informing which parts of the IP address should be matched against. 0 means ignore, 255 means match.
 
 True iff the IP address of the host matches the specified IP address pattern.
 
@@ -205,7 +242,11 @@ Pattern and mask specification is done the same way as for SOCKS configuration.
 
 ### Examples:
 
-**isInNet(host, "198.95.249.79", "255.255.255.255")**is true iff the IP address of host matches exactly 198.95.249.79.**isInNet(host, "198.95.0.0", "255.255.0.0")**is true iff the IP address of the host matches 198.95.*.*.
+**isInNet(host, "198.95.249.79", "255.255.255.255")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is true iff the IP address of host matches exactly 198.95.249.79.
+
+**isInNet(host, "198.95.0.0", "255.255.0.0")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is true iff the IP address of the host matches 198.95.*.*.
 
 ---
 
@@ -227,25 +268,32 @@ Returns the IP address of the host that the Navigator is running on, as a string
 
 ### Example:
 
-**myIpAddress()**would return the string "198.95.249.79" if you were running the Navigator on that host.
+**myIpAddress()**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;would return the string "198.95.249.79" if you were running the Navigator on that host.
 
 ---
 
 ### dnsDomainLevels(host)
 
-**host**is the hostname from the URL.
+**host**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is the hostname from the URL.
 
 Returns the number (integer) of DNS domain levels (number of dots) in the hostname.
 
 ### Examples:
 
-**dnsDomainLevels("www")**returns 0.**dnsDomainLevels("www.netscape.com")**returns 2.
+**dnsDomainLevels("www")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;returns 0.
+
+**dnsDomainLevels("www.netscape.com")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;returns 2.
 
 ---
 
 ### shExpMatch(str, shexp)
 
-**str**is any string to compare (e.g. the URL, or the hostname).**shexp**is a shell expression to compare against.
+**str**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is any string to compare (e.g. the URL, or the hostname).**shexp**is a shell expression to compare against.
 
 Returns true if the string matches the specified shell expression.
 
@@ -253,19 +301,28 @@ Returns true if the string matches the specified shell expression.
 
 ### Examples:
 
-**shExpMatch("http://home.netscape.com/people/ari/index.html", "*/ari/*")**is true.**shExpMatch("http://home.netscape.com/people/montulli/index.html", "*/ari/*")**is false.
+**shExpMatch("http://home.netscape.com/people/ari/index.html", "*/ari/*")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is true.
+
+**shExpMatch("http://home.netscape.com/people/montulli/index.html", "*/ari/*")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is false.
 
 ---
 
 ### weekdayRange(wd1, wd2, gmt)
 
-**wd1**and**wd2**are one of the weekday strings:
+**wd1**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;and
+
+**wd2**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;are one of the weekday strings:
 
 ```
     SUN MON TUE WED THU FRI SAT
 ```
 
-**gmt**is either the string: GMT or is left out.
+**gmt**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is either the string: GMT or is left out.
 
 Only the first parameter is mandatory. Either the second, the third, or both may be left out.
 
@@ -275,19 +332,49 @@ If both wd1 and wd1 are defined, the condition is true if the current weekda
 
 ### Examples:
 
-**weekdayRange("MON", "FRI")**true Monday trhough Friday (local timezone).**weekdayRange("MON", "FRI", "GMT")**same as above, but GMT timezone.**weekdayRange("SAT")**true on Saturdays local time.**weekdayRange("SAT", "GMT")**true on Saturdays GMT time.**weekdayRange("FRI", "MON")**true Friday through Monday (note, order does matter!).
+**weekdayRange("MON", "FRI")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true Monday trhough Friday (local timezone).
+
+**weekdayRange("MON", "FRI", "GMT")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;same as above, but GMT timezone.
+
+**weekdayRange("SAT")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true on Saturdays local time.
+
+**weekdayRange("SAT", "GMT")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true on Saturdays GMT time.
+
+**weekdayRange("FRI", "MON")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true Friday through Monday (note, order does matter!).
 
 ---
 
-### dateRange(day)dateRange(day1, day2)dateRange(mon)dateRange(month1, month2)dateRange(year)dateRange(year1, year2)dateRange(day1, month1, day2, month2)dateRange(month1, year1, month2, year2)dateRange(day1, month1, year1, day2, month2, year2)dateRange(day1, month1, year1, day2, month2, year2, gmt)
+### dateRange(day)
+dateRange(day1, day2)
+dateRange(mon)
+dateRange(month1, month2)
+dateRange(year)
+dateRange(year1, year2)
+dateRange(day1, month1, day2, month2)
+dateRange(month1, year1, month2, year2)
+dateRange(day1, month1, year1, day2, month2, year2)
+dateRange(day1, month1, year1, day2, month2, year2, gmt)
 
-**day**is the day of month between 1 and 31 (as an integer).**month**is one of the month strings:
+**day**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is the day of month between 1 and 31 (as an integer).
+
+**month**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is one of the month strings:
 
 ```
     JAN FEB MAR APR MAY JUN JUL AUG SEP OCT NOV DEC
 ```
 
-**year**is the full year number, for example 1995 (but **not** 95). Integer.**gmt**is either the string "GMT", which makes time comparison occur in GMT timezone; if left unspecified, times are taken to be in the local timezone.
+**year**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is the full year number, for example 1995 (but **not** 95). Integer.
+
+**gmt**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is either the string "GMT", which makes time comparison occur in GMT timezone; if left unspecified, times are taken to be in the local timezone.
 
 Even though the above examples don’t show, the "GMT" parameter can be specified in any of the 9 different call profiles, always as the last parameter.
 
@@ -295,19 +382,79 @@ If only a single value is specified (from each category: day, month, year), the 
 
 ### Examples:
 
-**dateRange(1)**true on the first day of each month, local timezone.**dateRange(1, "GMT")**true on the first day of each month, GMT timezone.**dateRange(1, 15)**true on the first half of each month.**dateRange(24, "DEC")**true on 24th of December each year.**dateRange(24, "DEC", 1995)**true on 24th of December, 1995.**dateRange("JAN", "MAR")**true on the first quarter of the year.**dateRange(1, "JUN", 15, "AUG")**true from June 1st until August 15th, each year (including June 1st and August 15th).**dateRange(1, "JUN", 15, 1995, "AUG", 1995)**true from June 1st, 1995, until August 15th, same year.**dateRange("OCT", 1995, "MAR", 1996)**true from October 1995 until March 1996 (including the entire month of October 1995 and March 1996).**dateRange(1995)**true during the entire year 1995.**dateRange(1995, 1997)**true from beginning of year 1995 until the end of year 1997.
+**dateRange(1)**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true on the first day of each month, local timezone.
+
+**dateRange(1, "GMT")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true on the first day of each month, GMT timezone.
+
+**dateRange(1, 15)**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true on the first half of each month.
+
+**dateRange(24, "DEC")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true on 24th of December each year.
+
+**dateRange(24, "DEC", 1995)**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true on 24th of December, 1995.
+
+**dateRange("JAN", "MAR")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true on the first quarter of the year.
+
+**dateRange(1, "JUN", 15, "AUG")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true from June 1st until August 15th, each year (including June 1st and August 15th).
+
+**dateRange(1, "JUN", 15, 1995, "AUG", 1995)**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true from June 1st, 1995, until August 15th, same year.
+
+**dateRange("OCT", 1995, "MAR", 1996)**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true from October 1995 until March 1996 (including the entire month of October 1995 and March 1996).
+
+**dateRange(1995)**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true during the entire year 1995.
+
+**dateRange(1995, 1997)**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true from beginning of year 1995 until the end of year 1997.
 
 ---
 
-### timeRange(hour)timeRange(hour1, hour2)timeRange(hour1, min1, hour2, min2)timeRange(hour1, min1, sec1, hour2, min2, sec2)timeRange(hour1, min1, sec1, hour2, min2, sec2, gmt)
+### timeRange(hour)timeRange(hour1, hour2)
+timeRange(hour1, min1, hour2, min2)
+timeRange(hour1, min1, sec1, hour2, min2, sec2)
+timeRange(hour1, min1, sec1, hour2, min2, sec2, gmt)
 
-**hour**is the hour from 0 to 23. (0 is midnight, 23 is 11 pm.)**min**minutes from 0 to 59.**sec**seconds from 0 to 59.**gmt**either the string "GMT" for GMT timezone, or not specified, for local timezone. Again, even though the above list doesn’t show it, this parameter may be present in each of the different parameter profiles, always as the last parameter.
+**hour**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is the hour from 0 to 23. (0 is midnight, 23 is 11 pm.)
+
+**min**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;minutes from 0 to 59.
+
+**sec**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;seconds from 0 to 59.
+
+**gmt**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;either the string "GMT" for GMT timezone, or not specified, for local timezone. Again, even though the above list doesn’t show it, this parameter may be present in each of the different parameter profiles, always as the last parameter.
 
 True during (or between) the specified time(s).
 
 ### Examples:
 
-**timerange(12)**true from noon to 1pm.**timerange(12, 13)**same as above.**timerange(12, "GMT")**true from noon to 1pm, in GMT timezone.**timerange(9, 17)**true from 9am to 5pm.**timerange(8, 30, 17, 00)**true from 8:30am to 5:00pm.**timerange(0, 0, 0, 0, 0, 30)**true between midnight and 30 seconds past midnight.
+**timerange(12)**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true from noon to 1pm.
+
+**timerange(12, 13)**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;same as above.
+
+**timerange(12, "GMT")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true from noon to 1pm, in GMT timezone.
+
+**timerange(9, 17)**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true from 9am to 5pm.
+
+**timerange(8, 30, 17, 00)**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true from 8:30am to 5:00pm.
+
+**timerange(0, 0, 0, 0, 0, 30)**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;true between midnight and 30 seconds past midnight.
 
 ---
 
