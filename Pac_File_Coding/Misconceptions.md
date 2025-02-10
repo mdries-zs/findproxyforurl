@@ -1,6 +1,6 @@
 # Misconceptions
 
-Although widely implemented, the [PAC specification](http://findproxyforurl.com/misconceptions/netscape-documentation/) is not a ratified standard, while the WPAD specification only got as far as being an [IETF draft](http://tools.ietf.org/html/draft-ietf-wrec-wpad-01), a draft which expired December 1999. This lack of standardization has resulted in some inconsistent PAC coding practices which do not reflect the actual implementation of the PAC specification in major browsers.
+Although widely implemented, the [PAC specification](https://github.com/mdriesnj/findproxyforurl/blob/main/Support/netscape_documentation.md) is not a ratified standard, while the WPAD specification only got as far as being an [IETF draft](http://tools.ietf.org/html/draft-ietf-wrec-wpad-01), a draft which expired December 1999. This lack of standardization has resulted in some inconsistent PAC coding practices which do not reflect the actual implementation of the PAC specification in major browsers.
 
 Despite this ambiguity the implementation of the PAC specification, with the exception of the myIpAddress() function, is consistent across browsers and operating systems.
 
