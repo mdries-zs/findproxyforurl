@@ -1,5 +1,4 @@
 # Netscape Documentation
-
 # Untitled
 
 **Published in 1996, Netscape hosted documentation detailing the functionality of available PAC file functions. This page is now offline, however, for reference purposes it has been restored and provided below as is.**
@@ -92,21 +91,21 @@ If all proxies are down, and there was no DIRECT option specified, the Navigat
 # Predefined Functions and Environment for the JavaScript Function
 
 - Hostname based conditions:
-    - [isPlainHostName()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation/#isPlainHostName)
-    - [dnsDomainIs()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation/#dnsDomainIs)
-    - [localHostOrDomainIs()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation/#localHostOrDomainIs)
-    - [isResolvable()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation/#isResolvable)
-    - [isInNet()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation/#isInNet)
+    - [isPlainHostName()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#isPlainHostName)
+    - [dnsDomainIs()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#dnsDomainIs)
+    - [localHostOrDomainIs()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#localHostOrDomainIs)
+    - [isResolvable()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#isResolvable)
+    - [isInNet()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#isInNet)
 - Related utility functions:
-    - [dnsResolve()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation/#dnsResolve)
-    - [myIpAddress()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation/#myIpAddress)
-    - [dnsDomainLevels()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation/#dnsDomainLevels)
+    - [dnsResolve()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#dnsResolve)
+    - [myIpAddress()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#myIpAddress)
+    - [dnsDomainLevels()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#dnsDomainLevels)
 - URL/hostname based conditions:
-    - [shExpMatch()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation/#shExpMatch)
+    - [shExpMatch()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#shExpMatch)
 - Time based conditions:
-    - [weekdayRange()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation/#weekdayRange)
-    - [dateRange()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation/#dateRange)
-    - [timeRange()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation/#timeRange)
+    - [weekdayRange()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#weekdayRange)
+    - [dateRange()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#dateRange)
+    - [timeRange()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#timeRange)
 - There is one associative array already defined (because a JavaScript currently cannot define them on its own):
     - ProxyConfig.bindings
 
