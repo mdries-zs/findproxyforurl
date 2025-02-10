@@ -1,5 +1,7 @@
 # Introduction to PAC files
 
+This Git repo is a clone of http://findproxyforurl.com/deploying-wpad which now appears to be dead. I pulled the data from the Internet Archive. 
+
 
 ## What is a PAC file?
 A Proxy Auto-Configuration (PAC) file contains a set of rules coded in JavaScript which allows a web browser to determine whether to send web traffic direct to the Internet or be sent via a proxy server.
