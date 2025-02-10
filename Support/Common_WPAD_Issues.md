@@ -30,5 +30,8 @@ A command line option isn’t available for Windows 2003, thus changes need to b
 <details>
   <summary>Firefox doesn’t locate my PAC file when using DHCP WPAD, why is this?
 </summary>
-  Firefox solely supports DNS WPAD, DHCP WPAD is not supported. Please see the [WPAD Introduction](http://findproxyforurl.com/wpad-introduction/) and [Browser Support](http://findproxyforurl.com/browser-support/) pages for more information.
+  Firefox solely supports DNS WPAD, DHCP WPAD is not supported. Please see the [WPAD Introduction](https://github.com/mdries-zs/findproxyforurl/blob/main/2_Wpad_Intro.md) and [Browser Support](https://github.com/mdries-zs/findproxyforurl/blob/main/Deployment/Browser_Support.md) pages for more information.
 </details>
+
+
+[Back to ReadMe](https://github.com/mdries-zs/findproxyforurl/blob/main/README.md)
