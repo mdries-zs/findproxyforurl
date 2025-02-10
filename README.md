@@ -1,6 +1,6 @@
 <h1>Introduction to PAC files</h1>
 
-What is a PAC file?
+<h2>What is a PAC file?<h2>
 A Proxy Auto-Configuration (PAC) file contains a set of rules coded in JavaScript which allows a web browser to determine whether to send web traffic direct to the Internet or be sent via a proxy server.
 
 PAC files can control how a web browser handles HTTP, HTTPS, and FTP traffic.
@@ -24,3 +24,4 @@ With a PAC file your internal traffic will go direct, your traffic destined for 
 
 Once the PAC file is designed and deployed any ongoing maintenance will be straightforward.
 
+<a href="pac-file-introduction-2">Next Page</a> 
