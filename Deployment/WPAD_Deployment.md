@@ -6,7 +6,7 @@ In order for the DNS WPAD functionality to detect the PAC file, rename the PAC f
 
 # Web Server
 
-The web server should be configured to serve a [PAC file](https://github.com/mdriesnj/findproxyforurl/blob/main/Pac_File_Coding/Example.md), **wpad.dat**, with the correct MIME type.
+The web server should be configured to serve a [PAC file](https://github.com/mdries-zs/findproxyforurl/blob/main/Pac_File_Coding/Example.md), **wpad.dat**, with the correct MIME type.
 <details>
   <summary>IIS Server</summary>
 
@@ -123,3 +123,5 @@ Like Safari, Chrome utilizes the Windows proxy settings as used in Internet Expl
 
 Opera doesn’t support the WPAD protocol.
 </details>
+
+[Back to ReadMe](https://github.com/mdries-zs/findproxyforurl/blob/main/README.md)
