@@ -49,6 +49,7 @@ You can navigate the file structure on the left or use the links below...
 - [Common PAC File Issues](https://github.com/mdriesnj/findproxyforurl/blob/main/Support/Common_PAC_File_Issues.md)
 - [Common WPAD Issues](https://github.com/mdriesnj/findproxyforurl/blob/main/Support/Common_WPAD_Issues.md)
 - [Troubleshooting](https://github.com/mdriesnj/findproxyforurl/blob/main/Support/Troubleshooting.md)
+- [Netscape Documentation 'legacy'](https://github.com/mdriesnj/findproxyforurl/blob/main/Support/netscape_documentation.md)
 
 # Helpful Tools
 
