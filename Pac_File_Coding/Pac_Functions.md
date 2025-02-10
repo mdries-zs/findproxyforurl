@@ -186,3 +186,5 @@ The alert() function is not specified in the original PAC specification, althoug
     resolved_host = dnsResolve(host);
     alert(resolved_host);
 </details>
+
+[Back to ReadMe](https://github.com/mdries-zs/findproxyforurl/blob/main/README.md)
