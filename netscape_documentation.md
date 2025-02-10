@@ -343,16 +343,16 @@ If both wd1 and wd1 are defined, the condition is true if the current weekda
 
 ---
 
-### dateRange(day)
-dateRange(day1, day2)
-dateRange(mon)
-dateRange(month1, month2)
-dateRange(year)
-dateRange(year1, year2)
-dateRange(day1, month1, day2, month2)
-dateRange(month1, year1, month2, year2)
-dateRange(day1, month1, year1, day2, month2, year2)
-dateRange(day1, month1, year1, day2, month2, year2, gmt)
+**dateRange(day)**<br>
+**dateRange(day1, day2)**<br>
+**dateRange(mon)**<br>
+**dateRange(month1, month2)**<br>
+**dateRange(year)**<br>
+**dateRange(year1, year2)**<br>
+**dateRange(day1, month1, day2, month2)**<br>
+**dateRange(month1, year1, month2, year2)**<br>
+**dateRange(day1, month1, year1, day2, month2, year2)**<br>
+**dateRange(day1, month1, year1, day2, month2, year2, gmt)**<br>
 
 **day**
 <br>&nbsp;&nbsp;&nbsp;&nbsp;is the day of month between 1 and 31 (as an integer).
@@ -411,10 +411,10 @@ If only a single value is specified (from each category: day, month, year), the 
 
 ---
 
-### timeRange(hour)timeRange(hour1, hour2)
-timeRange(hour1, min1, hour2, min2)
-timeRange(hour1, min1, sec1, hour2, min2, sec2)
-timeRange(hour1, min1, sec1, hour2, min2, sec2, gmt)
+**timeRange(hour)timeRange(hour1, hour2)**<br>
+**timeRange(hour1, min1, hour2, min2)**<br>
+**timeRange(hour1, min1, sec1, hour2, min2, sec2)**<br>
+**timeRange(hour1, min1, sec1, hour2, min2, sec2, gmt)**<br>
 
 **hour**
 <br>&nbsp;&nbsp;&nbsp;&nbsp;is the hour from 0 to 23. (0 is midnight, 23 is 11 pm.)
@@ -634,14 +634,6 @@ Most of the standard JavaScript functionality is available for use in the FindP
 
 # Tips
 
-- The autoconfig file can be output by a CGI script. This is useful e.g. when making the autoconfig file act differently based on the client IP address (the  environment variable in CGI).
+- The autoconfig file can be output by a CGI script. This is useful e.g. when making the autoconfig file act differently based on the client IP address (the REMOTE_ADDR environment variable in CGI).
     
-    REMOTE_ADDR
-    
-- Use of ,  and  functions should be carefully considered, as they require DNS server to be consulted (whereas all other autoconfig related functions are mere string matching functions). If a proxy is used, the proxy will perform its own DNS lookup which would double the impact on the DNS server. Most of the time these functions are not necessary to achieve the desired result.
-    
-    isInNet()
-    
-    isResolvable()
-    
-    dnsResolve()
+- Use of isInNet(), isResolvable() and dnsResolve() functions should be carefully considered, as they require DNS server to be consulted (whereas all other autoconfig related functions are mere string matching functions). If a proxy is used, the proxy will perform its own DNS lookup which would double the impact on the DNS server. Most of the time these functions are not necessary to achieve the desired result.
