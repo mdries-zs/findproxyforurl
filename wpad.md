@@ -16,7 +16,7 @@ Prerequisites include a PAC file, web server, DHCP server, and for any user comp
 - The DHCP server responds with a **DHCP ACK** message, containing the list of options and configurations
 - One of these options, **252**, contains the PAC file location. The web browser can perform a request to download the PAC file.
 
-
+![WPAD_Diagram1!](https://github.com/mdriesnj/findproxyforurl/blob/main/wpad_diagram1.png)
 
 ## DNS WPAD
 
