@@ -35,7 +35,7 @@ The web server should be configured to serve a [PAC file](https://github.com/
 
 # DHCP Server
 
-The DHCP server should be [configured](insertlink) to serve a 252 entry in the DHCP information sent to a user. When configured this entry includes a direct link to the **wpad.dat** file.
+The DHCP server should be configured to serve a 252 entry in the DHCP information sent to a user. When configured this entry includes a direct link to the **wpad.dat** file.
 
 <details>
   <summary>Windows 2003 DHCP</summary>
@@ -61,14 +61,14 @@ Once created we must then enable the option for a DHCP scope.
   <summary>Lunix DHCP</summary>
 
 1. Edit the DHCP configuration file (usually */etc/dhcp/dhcpd.conf*).
-2. Edit and paste the following into the file:*option local-pac-server code 252 = text;option local-pac-server “http://wpad.example.com:80/wpad.dat”;*The first declaration must go in the global section of the configuration file.
+2. Edit and paste the following into the file:  <br>&nbsp;&nbsp;&nbsp;&nbsp;option local-pac-server code 252 = text;option local-pac-server “http://wpad.example.com:80/wpad.dat”;  <br>&nbsp;&nbsp;&nbsp;&nbsp;<br>The first declaration must go in the global section of the configuration file.
 3. Restart the DHCP server.
   
 </details>
 
 # DNS Server
 
-The DNS server should be [configured](insertlink) to serve an A record for the host **wpad**.
+The DNS server should be configured to serve an A record for the host **wpad**.
 <details>
   <summary>Windows 2003 DNS</summary>
 
