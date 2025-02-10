@@ -7,7 +7,7 @@ Click a question or problem in order to view the solution.
 <details>
   <summary>My web browser doesn’t seem to be using the PAC file despite the PAC URL being configured, what are some possible reasons for this?</summary>
 
-- Ensure that the web server has a MIME type ***application/x-ns-proxy-autoconfig*** configured for the *.pac* file extension. See the [PAC Deployment](https://web.archive.org/web/20160628033700/http://findproxyforurl.com/pac-deployment/) page for more information.
+- Ensure that the web server has a MIME type ***application/x-ns-proxy-autoconfig*** configured for the *.pac* file extension. See the [PAC Deployment](https://github.com/mdries-zs/findproxyforurl/blob/main/Deployment/PAC_Deployment.md) page for more information.
 - Disable the PAC file location in the browser proxy settings and enter the location of the PAC file in the browser URL bar, it should be accessible. If not, investigate the web server serving the file.
 - Confirm that the JavaScript PAC file code is free of syntax errors/failures.
 </details>
@@ -44,7 +44,7 @@ When assigning a value to the myIpAddress() function, a browser will use the fir
 2. Using the **Advanced** menu, click **Advanced Settings**, and click the **Adapters and Bindings** tab.
 3. In the **Connections** area, select the connection that you want to reorder. Use the arrow buttons to change the order.
 
-Further instructions and information for configuring the network adapter order can be found in the [Microsoft Support Center](https://web.archive.org/web/20160628033700/http://support.microsoft.com/kb/894564).
+Further instructions and information for configuring the network adapter order can be found in the [Microsoft Support Center](http://support.microsoft.com/kb/894564).
 </details>
 
 <details>
@@ -53,3 +53,5 @@ There are several code examples available which make attempts at a viable load b
 <br><br>
 Load balancing across proxies is best achieved using a hardware solution that sits in front of the proxies themselves, which can track the load across each, and distribute this traffic based on current volume.
 </details>
+
+[Back to ReadMe](https://github.com/mdries-zs/findproxyforurl/blob/main/README.md)
