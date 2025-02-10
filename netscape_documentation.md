@@ -1,5 +1,5 @@
 # Netscape Documentation
-# Untitled
+
 
 **Published in 1996, Netscape hosted documentation detailing the functionality of available PAC file functions. This page is now offline, however, for reference purposes it has been restored and provided below as is.**
 
@@ -91,21 +91,21 @@ If all proxies are down, and there was no DIRECT option specified, the Navigat
 # Predefined Functions and Environment for the JavaScript Function
 
 - Hostname based conditions:
-    - [isPlainHostName()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#isPlainHostName)
-    - [dnsDomainIs()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#dnsDomainIs)
-    - [localHostOrDomainIs()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#localHostOrDomainIs)
-    - [isResolvable()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#isResolvable)
-    - [isInNet()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#isInNet)
+    - [isPlainHostName()](#isPlainHostName)
+    - [dnsDomainIs()](#dnsDomainIs)
+    - [localHostOrDomainIs()](#localHostOrDomainIs)
+    - [isResolvable()](#isResolvable)
+    - [isInNet()](#isInNet)
 - Related utility functions:
-    - [dnsResolve()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#dnsResolve)
-    - [myIpAddress()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#myIpAddress)
-    - [dnsDomainLevels()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#dnsDomainLevels)
+    - [dnsResolve()](#dnsResolve)
+    - [myIpAddress()](#myIpAddress)
+    - [dnsDomainLevels()](#dnsDomainLevels)
 - URL/hostname based conditions:
-    - [shExpMatch()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#shExpMatch)
+    - [shExpMatch()](#shExpMatch)
 - Time based conditions:
-    - [weekdayRange()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#weekdayRange)
-    - [dateRange()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#dateRange)
-    - [timeRange()](https://github.com/mdriesnj/findproxyforurl/blob/main/netscape-documentation.md/#timeRange)
+    - [weekdayRange()](#weekdayRange)
+    - [dateRange()](#dateRange)
+    - [timeRange()](#timeRange)
 - There is one associative array already defined (because a JavaScript currently cannot define them on its own):
     - ProxyConfig.bindings
 
