@@ -24,7 +24,7 @@ DNS WPAD is a method of detecting a PAC file via discovery by leveraging the net
 
 Prerequisites include a PAC file, web server, and a locally access DNS hostname to point to the web server.
 
-*** Example
+### Example
 
 - In the below example, the network name of the user computer is **laptop01.us.division.company.com**.
 - A PAC file with the file name **wpad.dat** is being served by a web server on the host **wpad.company.com**.
