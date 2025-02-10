@@ -6,7 +6,7 @@ In order for the DNS WPAD functionality to detect the PAC file, rename the PAC f
 
 # Web Server
 
-The web server should be [configured](insertlink) to serve a [PAC file](insertlink), **wpad.dat**, with the correct MIME type.
+The web server should be configured to serve a [PAC file](https://github.com/mdriesnj/findproxyforurl/blob/main/Pac_File_Coding/Example.md), **wpad.dat**, with the correct MIME type.
 <details>
   <summary>IIS Server</summary>
 
