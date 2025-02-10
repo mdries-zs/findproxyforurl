@@ -16,7 +16,7 @@ Additionally, a PAC file can route:
 
 ## What are the limitations?
 
-- PAC files run in a browser sandbox thus don’t have access to the entire JavaScript programming language. Instead, PAC file functionality is implemented in a browser with a custom sanboxed function set. More information as to the available functions can be found here.
+- PAC files run in a browser sandbox thus don’t have access to the entire JavaScript programming language. Instead, PAC file functionality is implemented in a browser with a custom sanboxed function set. More information as to the available functions can be found [here](https://github.com/mdriesnj/findproxyforurl/blob/main/pac-functions/README.md).
 - No access to the machine hostname
 - No reliable method to determine the user IP address*
 - Proxy failover lacks intelligence and operates based on a TCP timeout occurring
