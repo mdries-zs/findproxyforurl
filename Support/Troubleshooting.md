@@ -2,9 +2,9 @@
 
 It can be difficult to isolate issues with PAC files, a task only complicated when using the WPAD deployment method. It’s recommended that certain steps be followed to isolate an issue in a PAC/WPAD environment and this page attempts to document this process.
 
-These processes focus specifically on an inability to access a PAC file or a failure of the WPAD deployment methods. For other types of issues, please review the common issue sections for [PAC](https://github.com/mdriesnj/findproxyforurl/blob/main/Support/Common_PAC_File_Issues.md) and [WPAD](https://github.com/mdriesnj/findproxyforurl/blob/main/Support/Common_WPAD_Issues.md).
+These processes focus specifically on an inability to access a PAC file or a failure of the WPAD deployment methods. For other types of issues, please review the common issue sections for [PAC](https://github.com/mdries-zs/findproxyforurl/blob/main/Support/Common_PAC_File_Issues.md) and [WPAD](https://github.com/mdries-zs/findproxyforurl/blob/main/Support/Common_WPAD_Issues.md).
 
-It’s recommended to use the Official [FindProxyForURL.com toolset](insertlink) to aid in a troubleshooting investigation of any PAC or WPAD issues.
+You can also use [PAC File tester/parser](https://thorsenlabs.com/pac)
 
 Click a deployment in order to view the recommended troubleshooting process.
 
@@ -29,7 +29,7 @@ Click a deployment in order to view the recommended troubleshooting process.
     2. Type *regedit* and click **OK**.
     3. Navigate the Registry tree to the following location: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections\
     4. In the pane to the right, double click **DefaultConnectionSettings**.
-    5. The WPAD DHCP URL will be displayed in the dialog box – [screenshot](https://github.com/mdriesnj/findproxyforurl/blob/main/Images/screenshot.png?raw=true)
+    5. The WPAD DHCP URL will be displayed in the dialog box – [screenshot](https://github.com/mdries-zs/findproxyforurl/blob/main/Images/screenshot.png?raw=true)
   
 </details>
 
@@ -41,3 +41,5 @@ Click a deployment in order to view the recommended troubleshooting process.
 - With all proxy/PAC settings disabled, attempt to access http://wpad/wpat.dat – WPAD DNS requires that this be the functional URL format. Investigate any errors returned.
 
 </details>
+
+[Back to ReadMe](https://github.com/mdries-zs/findproxyforurl/blob/main/README.md)
