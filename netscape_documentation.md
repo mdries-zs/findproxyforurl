@@ -7,7 +7,7 @@
 
 ### Navigator Proxy Auto-Config File Format
 
-*March 1996(There are several examples and tips in the end of this document)*
+<br>&nbsp;&nbsp;&nbsp;&nbsp; *March 1996(There are several examples and tips in the end of this document)*
 
 ---
 
@@ -29,16 +29,13 @@ which will be called by the Navigator in the following way for every URL that is
 where:
 
 **url**
-
-the full URL being accessed.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;the full URL being accessed.
 
 **host**
-
-the hostname extracted from the URL. This is only for convenience, it is the exact same string as between :// and the first : or / after that. The port number is not included in this parameter. It can be extracted from the URL when necessary.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;the hostname extracted from the URL. This is only for convenience, it is the exact same string as between :// and the first : or / after that. The port number is not included in this parameter. It can be extracted from the URL when necessary.
 
 **ret**
-
-(the return value) a string describing the configuration. The format of this string is defined below.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;(the return value) a string describing the configuration. The format of this string is defined below.
 
 ---
 
@@ -51,12 +48,10 @@ the hostname extracted from the URL. This is only for convenience, it is the exa
 ```
 
 **Note 1:**
-
-You should save the JavaScript function
+<br>&nbsp;&nbsp;&nbsp;&nbsp;You should save the JavaScript function
 
 **by itself**
-
-, not embed it in HTML.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;, not embed it in HTML.
 
 **Note 2:** The examples in the end of this document are **complete**, there is no additional syntax needed to save it into a file and use it (of course, the JavaScripts have to be edited to reflect your site’s domain name and/or subnets).
 
@@ -67,19 +62,16 @@ You should save the JavaScript function
         application/x-ns-proxy-autoconfig
 ```
 
-  If using a Netscape server, edit the
+<br>&nbsp;&nbsp;&nbsp;&nbsp;If using a Netscape server, edit the
 
 mime.types
-
-  file in the
+<br>&nbsp;&nbsp;&nbsp;&nbsp;file in the
 
 config
-
-  directory. If using Apache, CERN or NCSA servers, use the
+<br>&nbsp;&nbsp;&nbsp;&nbsp;directory. If using Apache, CERN or NCSA servers, use the
 
 AddType
-
-  directive.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;directive.
 
 ---
 
@@ -92,13 +84,13 @@ If the string is null, no proxies should be used.
 The string can contain any number of the following building blocks, separated by a semicolon:
 
 **DIRECT**
-<br>   Connections should be made directly, without any proxies.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Connections should be made directly, without any proxies.
    
 **PROXY *host:port***
-<br>   The specified proxy should be used.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;The specified proxy should be used.
    
 **SOCKS *host:port***
-<br>   The specified SOCKS server should be used.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;The specified SOCKS server should be used.
 
 If there are multiple semicolon-separated settings, the left-most setting will be used, until the Navigator fails to establish the connection to the proxy. In that case the next value will be used, etc.
 
@@ -109,13 +101,13 @@ If all proxies are down, and there was no DIRECT option specified, the Navigat
 ### Examples:
 
 **PROXY w3proxy.netscape.com:8080; PROXY mozilla.netscape.com:8081**
-<br> Primary proxy is w3proxy:8080; if that goes down start using mozilla:8081 until the primary proxy comes up again.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Primary proxy is w3proxy:8080; if that goes down start using mozilla:8081 until the primary proxy comes up again.
 
 **PROXY w3proxy.netscape.com:8080; PROXY mozilla.netscape.com:8081; DIRECT**
-<br> Same as above, but if both proxies go down, automatically start making direct connections. (In the first example above, Netscape will ask user confirmation about making direct connections; in this third case, there is no user intervention.)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Same as above, but if both proxies go down, automatically start making direct connections. (In the first example above, Netscape will ask user confirmation about making direct connections; in this third case, there is no user intervention.)
 
 **PROXY w3proxy.netscape.com:8080; SOCKS socks:1080**
-<br> Use SOCKS if the primary proxy goes down.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Use SOCKS if the primary proxy goes down.
 
 ---
 
@@ -152,10 +144,10 @@ True iff there is no domain name in the hostname (no dots).
 ### Examples:
 
 **isPlainHostName("www")**
-<br> &nbsp;&nbsp;&nbsp;&nbsp;  is true.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is true.
 
 **isPlainHostName("www.netscape.com")**
-<br> &nbsp;&nbsp;&nbsp;&nbsp;  is false.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;is false.
 
 ---
 
@@ -252,13 +244,15 @@ Pattern and mask specification is done the same way as for SOCKS configuration.
 
 ### dnsResolve(host)
 
-**host**hostname to resolve
+**host**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;hostname to resolve
 
 Resolves the given DNS hostname into an IP address, and returns it in the dot separated format as a string.
 
 ### Example:
 
-**dnsResolve("home.netscape.com")**returns the string "198.95.249.79".
+**dnsResolve("home.netscape.com")**
+<br>&nbsp;&nbsp;&nbsp;&nbsp;returns the string "198.95.249.79".
 
 ---
 
