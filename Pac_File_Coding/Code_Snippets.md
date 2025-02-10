@@ -45,4 +45,6 @@ The majority of PAC files contain many common elements; this page serves as a re
 
 	if (isInNet(myIpAddress(), "10.10.5.0", "255.255.255.0"))
 		return "PROXY 1.2.3.4:8080";
-	
+
+[Back to ReadMe](https://github.com/mdries-zs/findproxyforurl/blob/main/README.md)
+
